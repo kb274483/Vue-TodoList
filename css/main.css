@@ -1,0 +1,157 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*------------------------------------------------*/
+.todo {
+  color: #d4eafc;
+  background-color: #5e5e5e;
+  border-radius: 10px;
+  font-size: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #2b2b2b;
+  -webkit-box-shadow: 0px 3px 5px 5px #c0c0c0;
+          box-shadow: 0px 3px 5px 5px #c0c0c0;
+}
+
+.todo a {
+  color: #d4eafc;
+}
+
+.todo .textInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.todo .textInput input {
+  border-radius: 10px;
+}
+
+.todo .textInput .enter {
+  line-height: 25px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+.todo .textInput .btn {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.todo .textInput .btn:hover {
+  cursor: pointer;
+  color: #5e5e5e;
+  background-color: #fad679;
+}
+
+.todo .taskContanier {
+  border: white 2px solid;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 2px 3px #c0c0c0;
+          box-shadow: 0px 2px 2px 3px #c0c0c0;
+  background-color: whitesmoke;
+  margin: 20px;
+}
+
+.todo .taskContanier .fliter {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.todo .taskContanier .fliter a {
+  color: #5e5e5e;
+}
+
+.todo .taskContanier .listContanier .list li {
+  border: white 2px solid;
+  border-radius: 10px;
+  background-color: #757575;
+  margin: 20px 0px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 30px;
+}
+
+.todo .taskContanier .listContanier .list li div {
+  cursor: pointer;
+}
+
+.todo .taskContanier .listContanier .list .done {
+  background-color: #fad679;
+  color: #5e5e5e;
+  border: #5e5e5e 2px solid;
+}
+
+.todo .taskContanier .listContanier .list .editEnter {
+  line-height: 30px;
+  width: 200px;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=main.css.map */

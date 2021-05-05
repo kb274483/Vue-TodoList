@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue TodoList</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="todo" id="todo" >
+        <div class="textInput">
+            <input type="text" class="enter" v-model="newTask">
+            <input type="button" value="ADD" class="btn" @click="addNewTask" > 
+        </div>
+        <div class="taskContanier">
+            <div class="fliter">
+                <a href="#">All Task</a>
+            </div>
+            <div class="listContanier">
+                <ul class="list" v-for="(item,index) in todoTask" :key="todoItem">
+                    <li :class="{ 'done' : item.status }">
+                        <input type="checkbox" v-model="item.status">
+                        <div class="items" @click="editTask(item.edit , index)"  v-if="item.edit">{{item.todoItem}}</div>
+                        <input type="text" v-else :value="item.todoItem" class="editEnter">
+                        <div class="delete" @click="deleteTask(index)" v-if="item.edit"> <img src="css/icon/trash.png"> </div>
+                        <div class="delete" @click="checkEdit(item.todoItem,index)" v-else> <img src="css/icon/checked.png"> </div> 
+                    </li>
+                </ul>
+            </div>
+        </div>    
+    </div>
+
+    
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="js/all.js"></script>
+</body>
+</html>
